@@ -1,0 +1,174 @@
+.qq_bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.qq_bg_rotate{
+    transform: rotate(-30deg);
+}
+.qq_bg>div{
+    position: absolute;
+    background-image: linear-gradient(#fff,#dedede);
+    border-radius: 50%;
+    animation: ani_circle 30s linear infinite alternate;
+}
+.circle1{
+    width: 50px;
+    height: 50px;
+    top: 10%;
+    left: 20%;
+}
+.circle2{
+    width: 100px;
+    height: 100px;
+    top: 55%;
+    left: 5%;
+}
+.circle3{
+    width: 150px;
+    height: 150px;
+    top: 62%;
+    left: 84%;
+}
+.circle4{
+    width: 200px;
+    height:200px;
+    top: 33%;
+    left: 70%;
+}
+.circle5{
+    width: 250px;
+    height: 250px;
+    top: 26%;
+    left: 40%;
+}
+.circle6{
+    width: 250px;
+    height: 250px;
+    top: 11%;
+    left: 30%;
+}
+@keyframes ani_circle{
+    0%{}
+    100%{transform: translateX(-1000px) rotate(360deg);}
+}
+/*第一屏开始*/
+.s1{
+    perspective: 1000px;
+}
+.s1_main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: transform 2s;
+    transform: translate(-50%,-50%);
+}
+.s1_main_begin{
+    transform: translate3d(-50%,-50%,800px) rotateY(180deg);
+}
+.s1_skin_gif{
+    position: absolute;
+    bottom: 0;
+}
+/*第一屏结束*/
+/*第二屏开始*/
+.s2{
+    perspective: 1000px;
+}
+.s2_main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: transform 1s;
+    transform: translate(-50%,-50%);
+    
+}
+.s2_main_begin{
+    transform: translate3d(-50%,-50%,-10000px);
+}
+.s2_main_end{
+    transform: translate3d(-50%,-50%,1800px);
+}
+.s2_title{
+    display: block;
+}
+/*第二屏结束*/
+
+/*第三屏开始*/
+.s3{
+    perspective: 1000px;
+    overflow: hidden;
+}
+.s3_main{
+    width: 100%;
+    height: 100%;
+    transform: rotateX(45deg);
+    transition: transform 1s;
+    position: relative;
+
+}
+.s3_main_begin{
+    transform:  rotateX(90deg);
+}
+.s3_browser{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    top: 30%;
+    left: 40%;
+    background-color: #fff;
+    transition: transform 1s;
+}
+.s3_title{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transition: transform 1s;
+}
+.s3_main_begin .s3_browser{
+    transform: translate3d(1000px,1500px,0);
+}
+.s3_main_begin .s3_title{
+    transform: translate3d(-1000px,1500px,0);
+}
+/*第三屏结束*/
+
+/*第四屏开始*/
+.s4_main{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+    transition: transform 1s;
+    transform: translate(-50%,-50%);
+}
+.s4_main_begin{
+    transform: translate(-200%,-80%) rotate(30deg);
+}
+.s4_main>img{
+    position: absolute;
+}
+.s4_main_end{
+    transform: translate(-1000px,-1000px);
+}
+.s4_m1{
+    top: 0;
+    left: 0;
+}
+.s4_m2{
+    top: 50%;
+    left: 0;
+}
+.s4_m4{
+    left: 68%;
+    top: 10%;
+}
+.s4_title{
+    position: absolute;
+    bottom: 0;
+}
+/*第四屏结束*/
